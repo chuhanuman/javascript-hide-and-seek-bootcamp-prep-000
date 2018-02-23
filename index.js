@@ -23,9 +23,9 @@ function deepestChild(selector) {
   var canWeGoDeeper = false;
   for (let i=0;i<1;i++) {
     console.log('LOOP');
-    if (document.querySelector(selector+" div")) {
+    if (all.children) {
       canWeGoDeeper = true;
-      console.log('LOOK');
+      console.log('GOING DEEPER');
       selector = deepestChild(selector+" div");
       canWeGoDeeper = false;
     } else {
