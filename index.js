@@ -23,7 +23,7 @@ function deepestChild(selector) {
   var canWeGoDeeper = false;
   for (let i=0;i<1;i++) {
     console.log('LOOP');
-    if (all.children) {
+    if (all.children[0]) {
       canWeGoDeeper = true;
       console.log('GOING DEEPER');
       selector = deepestChild(selector+" div");
